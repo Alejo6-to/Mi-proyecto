@@ -8,26 +8,25 @@
   <body>
 
     <section class="bg-slate-950 ">
-        <nav class=" bg-blue-900 text-white px-6 py-4 flex justify-between  ">
+        <nav class=" bg-blue-900 text-white px-6 py-4 flex flex flex-col md:flex-row justify-between  ">
 
             <div class="text-2xl font-bold">
                 M<span class="text-blue-500">R</span>
             </div>
 
-            <div class="flex gap-6">
-                <a href="#">Sobre mí</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Contacto</a>
+            <div class="flex gap-6 ">
+                <a class="hover:bg-blue-950 rounded p-4" href="/p4/hoja1.html">Sobre mí</a>
+                <a  class="hover:bg-blue-950 rounded p-4" href="#proyectos">Proyectos</a>
+                
             </div>
 
-            <button class="bg-indigo-600 px-4 py-2  rounded">
+            <button class="bg-indigo-600 px-4 py-2 rounded hover:bg-blue-950">
                 ↓ CV
             </button>
             
         </nav>
 
-        <div class=" text-white p-10 flex justify-between">
+        <div class=" text-white p-10 flex flex flex-col md:flex-row justify-between">
 
             <div>
                 <h1  class="text-8xl"> Hola , Soy  <br> 
@@ -41,14 +40,20 @@
                     utilizando las mejores tecnologias del ecosistema Front-End
                 </p>
                 <br> 
-                
-                <button class="bg-blue-600  text-white  p-4 rounded  ">
-                    Ver Proyectos ->
-                </button>
-                <button class="rounded p-4 border-2  border-blue-500">
-                    Contactar ⚡
-                </button>
+                <div class="flex gap-4"> 
+                    <button class="bg-blue-600  text-white  p-4 rounded  ">
+                      Ver Proyectos ->
+                    </button>
+                     <button class="rounded p-4 border-2  border-blue-500">
+                       Contactar ⚡
+                    </button>
+
+                </div>
+            
             </div>
+
+            <br>
+            <br>
 
             <div>
                 <img  class=" w-80  border-4 border-blue-500  rounded-full mr-25 "  src="imagenesm/foto.png" alt="">
@@ -56,18 +61,18 @@
 
         </div>
 
-        <div>
+        <div id="proyectos">
             <h2 class="text-white p-10 text-5xl"> 
                 🧑‍💻 Proyecto Destacados 
             </h2>
         </div>
 
-        <div class="flex justify-center gap-40 p-10 ">
+        <div class="flex justify-center gap-40 p-10 flex flex-col md:flex-row ">
 
 
             <div  class=" border-2 border-blue-500 w-70 h-80  text-center rounded ">
                 
-                <img class="w-55 mx-auto mt-8  h-40 rounded"  src="imagenesm/019be24960.webp" alt="">
+                <img class="w-55 mx-auto mt-5  h-40 rounded"  src="imagenesm/019be24960.webp" alt="">
                 <br>
                 <h3  class=" text-white text-2xl" > Trabjo con HTML Y CSS </h3>
                 <br>
@@ -76,16 +81,20 @@
 
             <div  class=" border-2 border-blue-500 w-70 h-80  text-center rounded " >
 
-                <img  class="w-60  mx-auto  mt-8 h-40 rounded "  src="imagenesm/images.png" alt="">
+                <img  class="w-60  mx-auto  mt-5 h-40 rounded "  src="imagenesm/images.png" alt="">
                 <br>
                 <h3 class=" text-white text-2xl">Trabajo con Bootstrap </h3>
                 <br>
-                <a class=" bg-blue-600 rounded text-white p-2"   href="p2/index.html">Ver Proyecto </a>
+                <div class="flex gap-2 justify-center">
+                    <a class=" bg-blue-600 rounded text-white p-2"   href="p2/index.html">Ver Proyecto </a>
+                    <a class=" bg-blue-600 rounded text-white p-2"   href="p2/indexll.html">Ver MAS </a>
+                </div>
+               
             </div>
 
-            <div class="border-2 border-blue-500  w-70 h-80  text-center rounded ">
+            <div class="border-2 border-blue-500  w-70 h-80  text-center rounded ">s
 
-                <img class="w-60 mx-auto  mt-8   h-40 rounded "  src="imagenesm/programacion-web.webp" alt="">
+                <img class="w-60 mx-auto h-40 rounded "  src="imagenesm/programacion-web.webp" alt="">
                 <br>
                  <h3 class=" text-white text-2xl">Trabajo con Tailwind </h3>
                 <br>
